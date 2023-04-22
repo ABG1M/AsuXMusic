@@ -51,7 +51,7 @@ async def start(client: Abishnoi, message: Message):
     )
 
 
-@Abishnoi.on_message(filters.command(["start", "help"]) & ~filters.group)
+@Abishnoi.on_message(filters.command(["mstart", "mhelp"]) & ~filters.group)
 async def start(_, message: Message):
     await message.reply_text(
         f"""ʜᴇʏ {message.from_user.mention()}, 
